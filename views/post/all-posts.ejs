@@ -1,0 +1,26 @@
+<%- include("../partials/header") -%>
+<!--<%- include("../partials/jumbotron") -%>-->
+<section id="content">
+    <div class="container" id="post-container" style="width: 100%;">
+        <div class="row d-lg-flex justify-content-lg-center">
+            <% posts.forEach(i => { %>
+                <div class="col-sm-12 col-md-6 post-card" data-aos="fade-up" data-aos-duration="800">
+                    <div class="card all-cards">
+                        <img class="card-img-top w-100 d-block post-title-image img-thumbnail"
+                             src="<%= i.image %>" alt="Image not found"
+                             onerror="this.onerror=null;this.src='/static/default.jpg';">
+                        <div class="card-body">
+                            <h2 class="card-title"><%= i.name %></h2>
+                            <h6 class="text-muted card-subtitle mb-2"><%= i.author.username %></h6>
+                            <p class="card-text"><%- i.description.slice(0,500) %> . . . </p>
+                            <a href="/post/<%= i["_id"] %>" class="card-hover-a">
+                                <button class="btn btn-dark btn-lg" type="button">Read more</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+</section>
+<%- include("../partials/footer") -%>

@@ -1,0 +1,26 @@
+<%- include("../partials/header") -%>
+<div data-aos="fade-up" data-aos-duration="500" class="contact-clean">
+    <form action="/post/<%= post._id %>?_method=PUT" method="POST">
+
+        <h2 class="text-center">Edit post</h2>
+        <div class="form-group">
+            <input class="form-control" type="text" name="post[name]" placeholder="Head post"
+                   pattern=".{6,255}" title="6-255 characters required"
+                   value="<%= post.name %>" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control is-invalid" type="text" name="post[image]" placeholder="Image"
+                   value="<%= post.image %>">
+            <small class="form-text text-danger">Please enter a correct image address.</small>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="post[description]" placeholder="Description post" rows="14"
+                      required><%= post.description %></textarea>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Edit post</button>
+        </div>
+    </form>
+</div>
+<%- include("../partials/footer") -%>

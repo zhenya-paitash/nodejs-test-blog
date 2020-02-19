@@ -1,0 +1,175 @@
+.navbar.navbar-light.navbar-expand-md {
+  width: 100%;
+  height: 10%;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+#nav-logo {
+  font-size: 26px;
+  padding-right: 10px;
+}
+
+.jumbotron {
+  background-image: url("https://images.unsplash.com/photo-1554306274-f23873d9a26c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 35px;
+  font-family: 'Advent Pro', sans-serif;
+  width: 100%;
+  height: 25%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#content {
+  width: 100%;
+}
+
+#post-container {
+  margin-top: 50px;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.footer-basic {
+  width: 100%;
+  height: 15%;
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  /*border-radius: 50%;*/
+  /*border: 1px solid #ccc;*/
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.post-title-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.all-cards {
+  height: 100%;
+}
+
+.card-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.post-card {
+  padding-bottom: 20px;
+}
+
+#single-post img {
+  width: 100%;
+  height: auto;
+}
+
+#post-edit {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#post-edit .btn {
+  margin: 2px;
+}
+
+.alert {
+  text-align: center;
+  font-family: 'Advent Pro', sans-serif;
+  opacity: 0.60;
+  width: 100%;
+}
+
+.row.comment-row {
+  padding-top: 25px;
+}
+
+#content-comment p {
+  padding-left: 25px;
+  font-size: 14px;
+}
+
+#content-comment {
+  padding: 10px 15px 0 15px;
+  border: 0.5px solid rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.edit-comment {
+  padding-left: 50px;
+  color: rgba(3,198,0,0.5);
+}
+
+.edit-comment:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.delete-comment {
+  padding-left: 15px;
+  color: rgba(222,0,0,0.5);
+}
+
+.delete-comment:hover {
+  text-decoration: none;
+  color: black;
+}
+

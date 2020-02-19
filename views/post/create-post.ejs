@@ -1,0 +1,24 @@
+<%- include("../partials/header") -%>
+<div data-aos="fade-up" data-aos-duration="500" class="contact-clean">
+    <form action="/post" method="POST">
+
+        <h2 class="text-center">Create post</h2>
+        <div class="form-group">
+            <input class="form-control" type="text" name="post[name]" placeholder="Head post"
+                   pattern=".{6,255}" title="6-255 characters required" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control is-invalid" type="text" name="post[image]" placeholder="Image">
+            <small class="form-text text-danger">Please enter a correct image address.</small>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" name="post[description]" placeholder="Description post" rows="14"
+                      pattern=".{6,}" title="min 6 characters required" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Add post</button>
+        </div>
+    </form>
+</div>
+<%- include("../partials/footer") -%>

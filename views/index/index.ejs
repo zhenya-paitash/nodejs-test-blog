@@ -1,0 +1,20 @@
+<%- include("../partials/header") -%>
+<%- include("../partials/jumbotron") -%>
+<section id="content">
+    <div class="container" id="post-container" style="width: 100%;">
+        <div class="row d-lg-flex justify-content-lg-center">
+            <div class="col-sm-12 col-md-6" data-aos="fade-up" data-aos-duration="800">
+                <h1>// APP LISTEN<br></h1>
+                <p>app.listen(config.PORT<strong>, </strong>config.IP<strong>, </strong>() =&gt; {<br>&nbsp; console.log(config.STATUS)<br>})<strong>;</strong></p>
+            </div>
+            <div class="col-sm-12 col-md-6" data-aos="fade-up" data-aos-duration="900">
+                <h1 class="d-lg-flex">// IMPORTS<br></h1>
+                <p>let<br>&nbsp; express = require("express")<strong>,&nbsp;</strong><br>&nbsp; expressSession = require("express-session")<strong>,</strong><br>&nbsp; mongoose = require("mongoose")<strong>,</strong><br>&nbsp; passport = require("passport")<strong>,</strong><br>&nbsp;
+                    LocalPassport = require("passport-local")<strong>,</strong><br>&nbsp; bodyParser = require("body-parser")<strong>,</strong><br>&nbsp; flash = require("connect-flash")<strong>,</strong><br>&nbsp; methodOverride = require("method-override")<strong>,</strong><br>&nbsp;
+                    exSynitize = require("express-sanitizer")<strong>,</strong><br>&nbsp; User = require("./models/user-model")<strong>,</strong><br>&nbsp; config = require("./config")<strong>,</strong><br>&nbsp; router = require("./routes/router")<strong>,</strong><br>&nbsp;
+                    app = express()<strong>;</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include("../partials/footer") -%>

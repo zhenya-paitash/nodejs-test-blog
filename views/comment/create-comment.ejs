@@ -1,0 +1,11 @@
+<%- include("../partials/header") -%>
+<div data-aos="fade-up" data-aos-duration="500" class="contact-clean">
+    <form action="/post/<%= post_id %>/comment/create" method="POST">
+        <h2 class="text-center">Create comment</h2>
+        <div class="form-group">
+            <textarea class="form-control" name="comment" placeholder="Enter your comment" rows="14" required></textarea>
+        </div>
+        <div class="form-group"><button class="btn btn-primary" type="submit">send</button></div>
+    </form>
+</div>
+<%- include("../partials/footer") -%>
