@@ -31,7 +31,7 @@ app.use(exSynitize());
 app.use(flash());
 app.use(methodOverride("_method"));
 app.use(expressSession({
-  secret: process.env.SECRET,
+  secret: process.env.SECRET || "SECRET",
   resave: false,
   saveUninitialized: false
 }));
