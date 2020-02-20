@@ -75,15 +75,15 @@ postRouter.editPost = (req, res)=>{
 
 // ======================================== DELETE ========================================
 // DELETE post
-postRouter.deletePost = (req, res) => {
-  Post.findById(req.params.post_id, async function (err, findPost) {
-    if (findPost.comments !== []) {
+postRouter.deletePost = async (req, res) => {
+  await Post.findById(req.params.post_id, async (err, findPost) => {
+    if (findPost.comments !== [] && findPost.comments.length !== 0) {
       await findPost.comments.forEach(i => {
         Comment.findByIdAndRemove(i._id, ()=>{})
       })
     }
   });
-  Post.findByIdAndRemove(req.params.post_id, (err)=>{
+  await Post.findByIdAndRemove(req.params.post_id, (err)=>{
     if(err){
       console.error(err);
       req.flash("error", err.message)
