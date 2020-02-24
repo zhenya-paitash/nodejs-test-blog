@@ -1,3 +1,7 @@
-<h1># nodejs-test-blog</h1>
-
-<h4>Watch a preview on <a href="https://testblognodejs.herokuapp.com/">HEROKU</a></h4>
+# `nodejs-test-blog`
+**Watch a preview on <a href="https://testblognodejs.herokuapp.com/">heroku</a>.**
+<hr>
+![](https://i.imgur.com/4qbn1KY.png)
+![](https://i.imgur.com/W46FzY1.png)
+![](https://i.imgur.com/KgtQZ67.png)
+![](https://i.imgur.com/HxXRUms.png)
